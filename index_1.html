@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>연습용 문서</title>
+    <link rel="stylesheet" href="../../../static/css/css_2.css">
+</head>
+
+
+<body>
+    <div class="box1">
+        <div class="box1_description">
+            Created by SSM
+        </div>
+    </div>
+    {% include 'nav_bar.html' %}
+    <div class="slider">
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+
+
+
+
+
+
+
+
+
+    <!-- * 카카오맵 - 지도퍼가기 -->
+<!-- 1. 지도 노드 -->
+    <div id="daumRoughmapContainer1637607244834" class="root_daum_roughmap root_daum_roughmap_landing">지도</div>
+
+<!--
+	2. 설치 스크립트
+	* 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다.
+-->
+    <script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+
+<!-- 3. 실행 스크립트 -->
+    <script charset="UTF-8" class="map">
+	new daum.roughmap.Lander({
+		"timestamp" : "1637607244834",
+		"key" : "286fu",
+		"mapWidth" : "860",
+		"mapHeight" : "640"
+	}).render();
+    </script>
+
+
+    <br>
+    <br>
+    <br>
+
+    <h1>텍스트 링크 예제</h1>
+    <a href="/polls/content_1">content_1 드가자</a><br>
+    <a href="/polls/content_2">content_2 드가자</a><br>
+    <a href="/polls/content_3">content_3 드가자</a>
+    <footer id="main-fooetr">
+        <p class="last_description">Created by....</p>
+    </footer>
+    <div class="box2">
+        <div class="box2_description">
+            Copy right by DB석원 @SSM @PBS
+        </div>
+    </div>
+
+
+</body>
+</html>
